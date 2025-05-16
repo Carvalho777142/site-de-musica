@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+:root {
+    --cor-fundo: #09090b;
+    --cor-fundo-2: #18181b;
+    --cor-branca: #fff;
+    --cor-preta: #000;
+    --cor-texto: #a1a1aa;
+    --destaque: #f7b732;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 25px 0px;
+}
+
+header nav a {
+    color: var(--cor-texto);
+    margin: 0px 10px;
+}
+
+header nav a:hover {
+    color: var(--cor-branca);
+}
+
+.btn {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: 1px solid var(--cor-branca);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--cor-branca);
+    color: var(--cor-preta);
+
+}
+
+.btn-primary:hover {
+    background-color: var(--cor-branca) !important;
+    color: transparent !important;
+
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--cor-branca);
+}
+
+.btn-outline:hover {
+    background-color: var(--cor-branca) !important;
+    color: var(--cor-preta) !important;
+}
+
+.column {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.title {
+    font-size: 4em;
+    color: var(--cor-branca);
+}
+
+.subtitle {
+    font-size: 2.5em;
+    color: var(--cor-texto);
+    font-weight: 300;
+    margin: 40px;
+}
+
+.bg-img {
+    height: 90vh;
+    padding-top: 100px;
+    background-image: url(img/sol.png);
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cell{
+    display: flex;
+    justify-content: flex-end;
+}
+.titulo{
+    color: var(--destaque);
+}
+.titulo2{
+    color: var(--cor-branca);
+}
+.texto{
+    color:var(--cor-texto);
+}
